@@ -1,0 +1,23 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "main": "1.1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antoine-chap/algo-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antoine-chap/algo-js/issues"
+  },
+  "homepage": "https://github.com/Antoine-chap/algo-js#readme",
+  "description": "",
+  "dependencies": {
+    "env": "^0.0.2",
+    "prompt-sync": "^4.2.0"
+  }
+}
