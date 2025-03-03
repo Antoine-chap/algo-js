@@ -7,19 +7,25 @@ const prompt = require('prompt-sync')();
 let rand10 = () => {
     return Math.floor(Math.random() * 10) +1;
 }
+/**
+ * 
+ * @returns return Generic random numbers
+ */
+let multiRand = () => {
+    let aleatRand = Number(prompt("Entrer un nombre aléatoire."));
 
-let multiRand = Number(prompt("Entrer un nombre aléatoire."));
+    if(isNaN(aleatRand) || aleatRand <= 0){
+        console.log("Cette réponse n'est pas valide.");
 
-if(isNaN(multiRand) || multiRand <= 0){
-    console.log("Cette réponse n'est pas valide.");
-
-} else {
-    const arrNumbers = [];
-    for (let i = 0; i < multiRand; i++) {
+    } else {
+        const arrNumbers = [];
+        for (let i = 0; i < aleatRand; i++) {
         const randNumber = rand10();
         arrNumbers.push(randNumber);
+        }
+    return (`Les nombres aléatoire généres sont : ${arrNumbers.join(", ")}`);
     }
-    console.log(`Les nombres aléatoire généres sont : ${arrNumbers.join(", ")}`);
 }
-// a modifier pour rendre une fonction s'attaque a la tache des que j'ai du temps
+console.log(multiRand());
+
 
